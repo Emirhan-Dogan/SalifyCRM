@@ -1,4 +1,5 @@
 ﻿using Common.Middleware;
+using Core.Utilities.Security.Hashing;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -51,8 +52,6 @@ void ConfigureMiddleware(WebApplication app)
         app.UseSwagger();
         app.UseSwaggerUI();
     }
-
-
 
     app.UseHttpsRedirection();
     app.UseMiddleware<TokenValidationMiddleware>();

@@ -1,9 +1,0 @@
-{
-  "Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "B:\\VendorsideStaj\\SalifyCRM\\src\\Core\\Core",
-  "SalifyCRM.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "B:\\VendorsideStaj\\SalifyCRM\\src\\SalifyCRM\\SalifyCRM.Common",
-  "SalifyCRM.IdentityServer.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "B:\\VendorsideStaj\\SalifyCRM\\src\\SalifyCRM\\IdentityServer\\SalifyCRM.IdentityServer.Api",
-  "SalifyCRM.IdentityServer.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "B:\\VendorsideStaj\\SalifyCRM\\src\\SalifyCRM\\IdentityServer\\SalifyCRM.IdentityServer.Application",
-  "SalifyCRM.IdentityServer.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "B:\\VendorsideStaj\\SalifyCRM\\src\\SalifyCRM\\IdentityServer\\SalifyCRM.IdentityServer.Domain",
-  "SalifyCRM.IdentityServer.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "B:\\VendorsideStaj\\SalifyCRM\\src\\SalifyCRM\\IdentityServer\\SalifyCRM.IdentityServer.Infrastructure",
-  "SalifyCRM.IdentityServer.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "B:\\VendorsideStaj\\SalifyCRM\\src\\SalifyCRM\\IdentityServer\\SalifyCRM.IdentityServer.Persistence"
-}
