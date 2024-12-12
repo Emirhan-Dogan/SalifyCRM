@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BlLIND3Vuc95EKoQzHCUEqgQkmzAZvw1X+FPSvcB7pg=",
+  "Source": "SalifyCRM.IdentityServer.Api",
+  "BasePath": "_content/SalifyCRM.IdentityServer.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

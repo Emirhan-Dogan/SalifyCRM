@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SalifyCRM.IdentityServer.Api.props" />
+</Project>

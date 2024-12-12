@@ -1,0 +1,136 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FACC1E0D-4B3D-460C-9AF8-13A2CBD43FA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D593C7A8-3356-44C8-8EF3-60EBADBD6BD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SalifyCRM", "SalifyCRM", "{86DB8E92-9846-42C8-8158-85084F5C67CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.WebAPI", "src\SalifyCRM\SalifyCRM.WebAPI\SalifyCRM.WebAPI.csproj", "{03535B4C-938B-4419-8D89-B939955A39AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.Common", "src\SalifyCRM\SalifyCRM.Common\SalifyCRM.Common.csproj", "{B1468EA2-09C1-4A2E-9BE7-8742DCBABADA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9A31D59F-E800-4D40-8C75-0357F9E8AB7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{622FD1C9-BE86-48F6-8D37-AE9D473D84BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.IdentityServer.Application", "src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Application\SalifyCRM.IdentityServer.Application.csproj", "{374CD325-7B0C-467A-AB28-A8642E9CD0D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.IdentityServer.Domain", "src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\SalifyCRM.IdentityServer.Domain.csproj", "{F93D3FF7-C3C1-4B0E-89B5-A4CC839C636D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.IdentityServer.Persistence", "src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Persistence\SalifyCRM.IdentityServer.Persistence.csproj", "{17371237-F087-410B-AF3C-A8BA2389525A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.IdentityServer.Infrastructure", "src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Infrastructure\SalifyCRM.IdentityServer.Infrastructure.csproj", "{DFBB8FEF-787A-4A2D-BAC5-8A7E9DFD18A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.IdentityServer.Api", "src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Api\SalifyCRM.IdentityServer.Api.csproj", "{D6D3986C-0264-4423-95EE-7BE5B61B26BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.IdentityServer.Tests", "src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Tests\SalifyCRM.IdentityServer.Tests.csproj", "{4F43F9F6-B427-4B37-8FAB-ACFF0E6AC644}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "src\Core\Core\Core.csproj", "{E1483E23-C72C-485F-B182-1EB6EF41C91B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomerManagement", "CustomerManagement", "{3671C89A-4F99-4A2E-8845-5627A89265D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Domain", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Domain\SalifyCRM.CustomerManagement.Domain.csproj", "{7C49EDE7-53E1-42B9-BAA1-006F8E67F480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Application", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Application\SalifyCRM.CustomerManagement.Application.csproj", "{1860D2C8-8C0A-4F9E-AD01-6D30A0F1420F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Persistence", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Persistence\SalifyCRM.CustomerManagement.Persistence.csproj", "{75E3D214-0539-4052-837D-A352CE1046D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Infrastructure", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Infrastructure\SalifyCRM.CustomerManagement.Infrastructure.csproj", "{B2D7802E-B70E-48B6-B8FF-908F5B18C5D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Api", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Api\SalifyCRM.CustomerManagement.Api.csproj", "{17C8DF90-0582-4871-8B3F-FBD6801BDA94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03535B4C-938B-4419-8D89-B939955A39AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03535B4C-938B-4419-8D89-B939955A39AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03535B4C-938B-4419-8D89-B939955A39AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03535B4C-938B-4419-8D89-B939955A39AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1468EA2-09C1-4A2E-9BE7-8742DCBABADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1468EA2-09C1-4A2E-9BE7-8742DCBABADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1468EA2-09C1-4A2E-9BE7-8742DCBABADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1468EA2-09C1-4A2E-9BE7-8742DCBABADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374CD325-7B0C-467A-AB28-A8642E9CD0D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374CD325-7B0C-467A-AB28-A8642E9CD0D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374CD325-7B0C-467A-AB28-A8642E9CD0D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374CD325-7B0C-467A-AB28-A8642E9CD0D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93D3FF7-C3C1-4B0E-89B5-A4CC839C636D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93D3FF7-C3C1-4B0E-89B5-A4CC839C636D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93D3FF7-C3C1-4B0E-89B5-A4CC839C636D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93D3FF7-C3C1-4B0E-89B5-A4CC839C636D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17371237-F087-410B-AF3C-A8BA2389525A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17371237-F087-410B-AF3C-A8BA2389525A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17371237-F087-410B-AF3C-A8BA2389525A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17371237-F087-410B-AF3C-A8BA2389525A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFBB8FEF-787A-4A2D-BAC5-8A7E9DFD18A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBB8FEF-787A-4A2D-BAC5-8A7E9DFD18A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBB8FEF-787A-4A2D-BAC5-8A7E9DFD18A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBB8FEF-787A-4A2D-BAC5-8A7E9DFD18A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D3986C-0264-4423-95EE-7BE5B61B26BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D3986C-0264-4423-95EE-7BE5B61B26BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D3986C-0264-4423-95EE-7BE5B61B26BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D3986C-0264-4423-95EE-7BE5B61B26BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F43F9F6-B427-4B37-8FAB-ACFF0E6AC644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F43F9F6-B427-4B37-8FAB-ACFF0E6AC644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F43F9F6-B427-4B37-8FAB-ACFF0E6AC644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F43F9F6-B427-4B37-8FAB-ACFF0E6AC644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1483E23-C72C-485F-B182-1EB6EF41C91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1483E23-C72C-485F-B182-1EB6EF41C91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1483E23-C72C-485F-B182-1EB6EF41C91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1483E23-C72C-485F-B182-1EB6EF41C91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C49EDE7-53E1-42B9-BAA1-006F8E67F480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C49EDE7-53E1-42B9-BAA1-006F8E67F480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C49EDE7-53E1-42B9-BAA1-006F8E67F480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C49EDE7-53E1-42B9-BAA1-006F8E67F480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1860D2C8-8C0A-4F9E-AD01-6D30A0F1420F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1860D2C8-8C0A-4F9E-AD01-6D30A0F1420F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1860D2C8-8C0A-4F9E-AD01-6D30A0F1420F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1860D2C8-8C0A-4F9E-AD01-6D30A0F1420F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E3D214-0539-4052-837D-A352CE1046D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E3D214-0539-4052-837D-A352CE1046D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E3D214-0539-4052-837D-A352CE1046D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E3D214-0539-4052-837D-A352CE1046D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D7802E-B70E-48B6-B8FF-908F5B18C5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D7802E-B70E-48B6-B8FF-908F5B18C5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D7802E-B70E-48B6-B8FF-908F5B18C5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D7802E-B70E-48B6-B8FF-908F5B18C5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C8DF90-0582-4871-8B3F-FBD6801BDA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C8DF90-0582-4871-8B3F-FBD6801BDA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C8DF90-0582-4871-8B3F-FBD6801BDA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C8DF90-0582-4871-8B3F-FBD6801BDA94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D593C7A8-3356-44C8-8EF3-60EBADBD6BD1} = {FACC1E0D-4B3D-460C-9AF8-13A2CBD43FA8}
+		{86DB8E92-9846-42C8-8158-85084F5C67CC} = {FACC1E0D-4B3D-460C-9AF8-13A2CBD43FA8}
+		{03535B4C-938B-4419-8D89-B939955A39AD} = {86DB8E92-9846-42C8-8158-85084F5C67CC}
+		{B1468EA2-09C1-4A2E-9BE7-8742DCBABADA} = {86DB8E92-9846-42C8-8158-85084F5C67CC}
+		{9A31D59F-E800-4D40-8C75-0357F9E8AB7E} = {86DB8E92-9846-42C8-8158-85084F5C67CC}
+		{622FD1C9-BE86-48F6-8D37-AE9D473D84BC} = {86DB8E92-9846-42C8-8158-85084F5C67CC}
+		{374CD325-7B0C-467A-AB28-A8642E9CD0D7} = {622FD1C9-BE86-48F6-8D37-AE9D473D84BC}
+		{F93D3FF7-C3C1-4B0E-89B5-A4CC839C636D} = {622FD1C9-BE86-48F6-8D37-AE9D473D84BC}
+		{17371237-F087-410B-AF3C-A8BA2389525A} = {622FD1C9-BE86-48F6-8D37-AE9D473D84BC}
+		{DFBB8FEF-787A-4A2D-BAC5-8A7E9DFD18A4} = {622FD1C9-BE86-48F6-8D37-AE9D473D84BC}
+		{D6D3986C-0264-4423-95EE-7BE5B61B26BA} = {622FD1C9-BE86-48F6-8D37-AE9D473D84BC}
+		{4F43F9F6-B427-4B37-8FAB-ACFF0E6AC644} = {622FD1C9-BE86-48F6-8D37-AE9D473D84BC}
+		{E1483E23-C72C-485F-B182-1EB6EF41C91B} = {D593C7A8-3356-44C8-8EF3-60EBADBD6BD1}
+		{3671C89A-4F99-4A2E-8845-5627A89265D4} = {9A31D59F-E800-4D40-8C75-0357F9E8AB7E}
+		{7C49EDE7-53E1-42B9-BAA1-006F8E67F480} = {3671C89A-4F99-4A2E-8845-5627A89265D4}
+		{1860D2C8-8C0A-4F9E-AD01-6D30A0F1420F} = {3671C89A-4F99-4A2E-8845-5627A89265D4}
+		{75E3D214-0539-4052-837D-A352CE1046D2} = {3671C89A-4F99-4A2E-8845-5627A89265D4}
+		{B2D7802E-B70E-48B6-B8FF-908F5B18C5D8} = {3671C89A-4F99-4A2E-8845-5627A89265D4}
+		{17C8DF90-0582-4871-8B3F-FBD6801BDA94} = {3671C89A-4F99-4A2E-8845-5627A89265D4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC1833BF-BF84-4DCB-A924-DC34650A2B35}
+	EndGlobalSection
+EndGlobal

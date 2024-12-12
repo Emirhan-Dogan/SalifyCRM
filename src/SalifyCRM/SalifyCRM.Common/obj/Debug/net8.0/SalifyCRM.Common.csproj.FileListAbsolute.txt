@@ -1,0 +1,12 @@
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\bin\Debug\net8.0\SalifyCRM.Common.deps.json
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\bin\Debug\net8.0\SalifyCRM.Common.dll
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\bin\Debug\net8.0\SalifyCRM.Common.pdb
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\obj\Debug\net8.0\SalifyCRM.Common.csproj.AssemblyReference.cache
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\obj\Debug\net8.0\SalifyCRM.Common.GeneratedMSBuildEditorConfig.editorconfig
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\obj\Debug\net8.0\SalifyCRM.Common.AssemblyInfoInputs.cache
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\obj\Debug\net8.0\SalifyCRM.Common.AssemblyInfo.cs
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\obj\Debug\net8.0\SalifyCRM.Common.csproj.CoreCompileInputs.cache
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\obj\Debug\net8.0\SalifyCRM.Common.dll
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\obj\Debug\net8.0\refint\SalifyCRM.Common.dll
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\obj\Debug\net8.0\SalifyCRM.Common.pdb
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\SalifyCRM.Common\obj\Debug\net8.0\ref\SalifyCRM.Common.dll

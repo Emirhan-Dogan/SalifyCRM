@@ -1,0 +1,15 @@
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\bin\Debug\net8.0\SalifyCRM.IdentityServer.Domain.deps.json
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\bin\Debug\net8.0\SalifyCRM.IdentityServer.Domain.dll
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\bin\Debug\net8.0\SalifyCRM.IdentityServer.Domain.pdb
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\bin\Debug\net8.0\Core.dll
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\bin\Debug\net8.0\Core.pdb
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\SalifyCRM.IdentityServer.Domain.csproj.AssemblyReference.cache
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\SalifyCRM.IdentityServer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\SalifyCRM.IdentityServer.Domain.AssemblyInfoInputs.cache
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\SalifyCRM.IdentityServer.Domain.AssemblyInfo.cs
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\SalifyCRM.IdentityServer.Domain.csproj.CoreCompileInputs.cache
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\SalifyCR.C7BE86EF.Up2Date
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\SalifyCRM.IdentityServer.Domain.dll
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\refint\SalifyCRM.IdentityServer.Domain.dll
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\SalifyCRM.IdentityServer.Domain.pdb
+B:\VendorsideStaj\SalifyCRM\src\SalifyCRM\IdentityServer\SalifyCRM.IdentityServer.Domain\obj\Debug\net8.0\ref\SalifyCRM.IdentityServer.Domain.dll
