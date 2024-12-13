@@ -10,51 +10,29 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Ortamları doğru şekilde ayarlayalım
-ConfigureServices(builder);
+builder.Services.Configure<TokenOptions>(builder.Configuration.GetSection("TokenOptions"));
+builder.Services.AddScoped<ITokenHelper, JwtHelper>();
 
-// Uygulama yapılandırmasını tamamlayalım
+builder.Services.AddControllers();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddPersistenceServices(builder.Configuration);
+
+builder.Services.AddMediatR(Assembly.Load("SalifyCRM.IdentityServer.Application"));
+
 var app = builder.Build();
-ConfigureMiddleware(app);
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+app.UseMiddleware<TokenValidationMiddleware>();
+app.UseAuthorization();
+app.MapControllers();
 
 app.Run();
-
-// -----------------------------
-// Konfigürasyon Yöntemleri
-// -----------------------------
-
-void ConfigureServices(WebApplicationBuilder builder)
-{
-
-    // TokenOptions'ı appsettings.json'dan yükleyelim
-    builder.Services.Configure<TokenOptions>(builder.Configuration.GetSection("TokenOptions"));
-    builder.Services.AddScoped<ITokenHelper, JwtHelper>();
-
-    // Controller'ları ekleyelim
-    builder.Services.AddControllers();
-
-    // Swagger/OpenAPI desteğini ekleyelim
-    builder.Services.AddEndpointsApiExplorer();
-    builder.Services.AddSwaggerGen();
-
-    // Persistence katmanını ekleyelim
-    builder.Services.AddPersistenceServices(builder.Configuration);
-
-    // MediatR'ı ekleyelim
-    builder.Services.AddMediatR(Assembly.Load("SalifyCRM.IdentityServer.Application"));
-
-}
-
-void ConfigureMiddleware(WebApplication app)
-{
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseSwagger();
-        app.UseSwaggerUI();
-    }
-
-    app.UseHttpsRedirection();
-    app.UseMiddleware<TokenValidationMiddleware>();
-    app.UseAuthorization();
-    app.MapControllers();
-}

@@ -14,4 +14,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\IdentityServer\SalifyCRM.IdentityServer.Persistence\SalifyCRM.IdentityServer.Persistence.csproj" />
+    <ProjectReference Include="..\SalifyCRM.CustomerManagement.Application\SalifyCRM.CustomerManagement.Application.csproj" />
+  </ItemGroup>
+
 </Project>

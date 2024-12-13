@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D593C7A8-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SalifyCRM", "SalifyCRM", "{86DB8E92-9846-42C8-8158-85084F5C67CC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.WebAPI", "src\SalifyCRM\SalifyCRM.WebAPI\SalifyCRM.WebAPI.csproj", "{03535B4C-938B-4419-8D89-B939955A39AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.Gateway", "src\SalifyCRM\SalifyCRM.WebAPI\SalifyCRM.Gateway.csproj", "{03535B4C-938B-4419-8D89-B939955A39AD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.Common", "src\SalifyCRM\SalifyCRM.Common\SalifyCRM.Common.csproj", "{B1468EA2-09C1-4A2E-9BE7-8742DCBABADA}"
 EndProject
@@ -33,15 +33,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "src\Core\Core\Core.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomerManagement", "CustomerManagement", "{3671C89A-4F99-4A2E-8845-5627A89265D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Domain", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Domain\SalifyCRM.CustomerManagement.Domain.csproj", "{7C49EDE7-53E1-42B9-BAA1-006F8E67F480}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.CustomerManagement.Domain", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Domain\SalifyCRM.CustomerManagement.Domain.csproj", "{7C49EDE7-53E1-42B9-BAA1-006F8E67F480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Application", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Application\SalifyCRM.CustomerManagement.Application.csproj", "{1860D2C8-8C0A-4F9E-AD01-6D30A0F1420F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.CustomerManagement.Application", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Application\SalifyCRM.CustomerManagement.Application.csproj", "{1860D2C8-8C0A-4F9E-AD01-6D30A0F1420F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Persistence", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Persistence\SalifyCRM.CustomerManagement.Persistence.csproj", "{75E3D214-0539-4052-837D-A352CE1046D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.CustomerManagement.Persistence", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Persistence\SalifyCRM.CustomerManagement.Persistence.csproj", "{75E3D214-0539-4052-837D-A352CE1046D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Infrastructure", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Infrastructure\SalifyCRM.CustomerManagement.Infrastructure.csproj", "{B2D7802E-B70E-48B6-B8FF-908F5B18C5D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.CustomerManagement.Infrastructure", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Infrastructure\SalifyCRM.CustomerManagement.Infrastructure.csproj", "{B2D7802E-B70E-48B6-B8FF-908F5B18C5D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Api", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Api\SalifyCRM.CustomerManagement.Api.csproj", "{17C8DF90-0582-4871-8B3F-FBD6801BDA94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalifyCRM.CustomerManagement.Api", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Api\SalifyCRM.CustomerManagement.Api.csproj", "{17C8DF90-0582-4871-8B3F-FBD6801BDA94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalifyCRM.CustomerManagement.Tests", "src\SalifyCRM\Modules\CustomerManagement\SalifyCRM.CustomerManagement.Tests\SalifyCRM.CustomerManagement.Tests.csproj", "{F02C3042-647C-4DB2-9F80-9B61B7F61243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{17C8DF90-0582-4871-8B3F-FBD6801BDA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17C8DF90-0582-4871-8B3F-FBD6801BDA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17C8DF90-0582-4871-8B3F-FBD6801BDA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02C3042-647C-4DB2-9F80-9B61B7F61243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02C3042-647C-4DB2-9F80-9B61B7F61243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02C3042-647C-4DB2-9F80-9B61B7F61243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02C3042-647C-4DB2-9F80-9B61B7F61243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +135,7 @@ Global
 		{75E3D214-0539-4052-837D-A352CE1046D2} = {3671C89A-4F99-4A2E-8845-5627A89265D4}
 		{B2D7802E-B70E-48B6-B8FF-908F5B18C5D8} = {3671C89A-4F99-4A2E-8845-5627A89265D4}
 		{17C8DF90-0582-4871-8B3F-FBD6801BDA94} = {3671C89A-4F99-4A2E-8845-5627A89265D4}
+		{F02C3042-647C-4DB2-9F80-9B61B7F61243} = {3671C89A-4F99-4A2E-8845-5627A89265D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC1833BF-BF84-4DCB-A924-DC34650A2B35}
