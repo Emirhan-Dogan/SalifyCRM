@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Core.Utilities.Results
 {
-    public class SuccessResult : Result
+    public class SuccessResult : Result, ISuccess
     {
-        public SuccessResult(string message) 
+        public SuccessResult(string message)
             : base(success: true, message: message)
         {
 
         }
 
-        public SuccessResult() 
+        public SuccessResult()
             : base(success: true)
         {
 
