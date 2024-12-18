@@ -1,5 +1,6 @@
 ﻿using Core.Domain;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,31 +41,58 @@ namespace Core.Persistence.EntityFrameworkCore
             Context.Remove(entity);
         }
 
-        public TEntity Get(Expression<Func<TEntity, bool>> expression)
+        public TEntity Get(
+            Expression<Func<TEntity, bool>> expression,
+            Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null)
         {
-            return Context.Set<TEntity>().FirstOrDefault(expression);
+            IQueryable<TEntity> query = Context.Set<TEntity>();
+
+            if (include != null)
+            {
+                query = include(query);
+            }
+
+            return query.FirstOrDefault(expression);
         }
 
-
         public async Task<TEntity> GetAsync(
-            Expression<Func<TEntity, bool>> predicate)
+            Expression<Func<TEntity, bool>> predicate,
+            Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null)
         {
-            IQueryable<TEntity> query = Context.Set<TEntity>().AsQueryable();
+            IQueryable<TEntity> query = Context.Set<TEntity>();
+
+            if (include != null)
+            {
+                query = include(query);
+            }
 
             return await query.FirstOrDefaultAsync(predicate);
         }
 
-        public IEnumerable<TEntity> GetList(Expression<Func<TEntity, bool>> expression = null)
+        public IEnumerable<TEntity> GetList(
+            Expression<Func<TEntity, bool>> expression = null,
+            Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null)
         {
-            return expression == null
-                ? Context.Set<TEntity>().AsNoTracking()
-                : Context.Set<TEntity>().Where(expression).AsNoTracking();
+            IQueryable<TEntity> query = Context.Set<TEntity>().AsNoTracking();
+
+            if (include != null)
+            {
+                query = include(query);
+            }
+
+            return expression == null ? query : query.Where(expression);
         }
 
         public async Task<IEnumerable<TEntity>> GetListAsync(
-            Expression<Func<TEntity, bool>> expression = null)
+            Expression<Func<TEntity, bool>> expression = null,
+            Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null)
         {
-            IQueryable<TEntity> query = Context.Set<TEntity>().AsQueryable();
+            IQueryable<TEntity> query = Context.Set<TEntity>().AsNoTracking();
+
+            if (include != null)
+            {
+                query = include(query);
+            }
 
             if (expression != null)
             {
@@ -73,8 +101,6 @@ namespace Core.Persistence.EntityFrameworkCore
 
             return await query.ToListAsync();
         }
-
-
 
         public int SaveChanges()
         {

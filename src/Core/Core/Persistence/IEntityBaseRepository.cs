@@ -1,4 +1,5 @@
 ﻿using Core.Domain;
+using Microsoft.EntityFrameworkCore.Query;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +15,10 @@ namespace Core.Persistence
         T Add(T entity);
         T Update(T entity);
         void Delete(T entity);
-        IEnumerable<T> GetList(Expression<Func<T, bool>> expression = null);
-        Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> expression = null);
-        T Get(Expression<Func<T, bool>> expression);
-        Task<T> GetAsync(Expression<Func<T, bool>> expression);
+        IEnumerable<T> GetList(Expression<Func<T, bool>> expression = null, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null);
+        Task<IEnumerable<T>> GetListAsync(Expression<Func<T, bool>> expression = null, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null);
+        T Get(Expression<Func<T, bool>> expression, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null);
+        Task<T> GetAsync(Expression<Func<T, bool>> expression, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null);
         int SaveChanges();
         Task<int> SaveChangesAsync();
         IQueryable<T> Query();
