@@ -14,7 +14,6 @@ namespace SalifyCRM.CustomerManagement.Application.Responses.Countries
         public string Name { get; set; }
         public string Status { get; set; }
 
-        public List<CityResponse> Cities { get; set; }
-        public List<DistrictResponse> Districts { get; set; }
+        public List<CityDetailResponse> Cities { get; set; }
     }
 }

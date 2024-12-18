@@ -16,5 +16,9 @@ namespace SalifyCRM.CustomerManagement.Persistence.EntityFrameworkCore.Repositor
         {
 
         }
+        public object GetCityWithDistricts(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

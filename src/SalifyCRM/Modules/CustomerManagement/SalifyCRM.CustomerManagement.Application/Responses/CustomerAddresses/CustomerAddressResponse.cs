@@ -16,7 +16,7 @@ namespace SalifyCRM.CustomerManagement.Application.Responses.CustomerAddresses
 
         public string Status { get; set; }
 
-        public CustomerResponse Customer { get; set; }
-        public AddressResponse Address { get; set; }
+        public CustomerResponse? Customer { get; set; }
+        public AddressResponse? Address { get; set; }
     }
 }

@@ -10,5 +10,6 @@ namespace SalifyCRM.CustomerManagement.Application.RepositoryInterfaces
 {
     public interface ICustomerTagRepository : IEntityBaseRepository<CustomerTag>
     {
+        List<CustomerTag> GetCustomerTagByCustomerId(int id);
     }
 }

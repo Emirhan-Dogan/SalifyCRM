@@ -1,5 +1,6 @@
 ﻿using SalifyCRM.CustomerManagement.Application.Responses.Countries;
 using SalifyCRM.CustomerManagement.Application.Responses.Districts;
+using SalifyCRM.CustomerManagement.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

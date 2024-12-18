@@ -16,5 +16,9 @@ namespace SalifyCRM.CustomerManagement.Persistence.EntityFrameworkCore.Repositor
         {
 
         }
+        public Task GetCountryWithCitiesAndDistricts(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

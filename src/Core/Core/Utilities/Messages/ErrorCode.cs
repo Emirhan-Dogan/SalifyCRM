@@ -25,5 +25,7 @@ namespace Core.Utilities.Messages
         DB3001, // Veritabanına ulaşılamıyor.
 
         BUS4001, // İlgili veri zaten mevcut
+        BUS4002, // İlgili veri bulunamadı
+        BUS4003, // Geçersiz kullanıcı ile işlem isteği 
     }
 }

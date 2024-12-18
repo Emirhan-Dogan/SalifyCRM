@@ -16,5 +16,9 @@ namespace SalifyCRM.CustomerManagement.Persistence.EntityFrameworkCore.Repositor
         {
 
         }
+        public object GetCustomerTagByCustomerId(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

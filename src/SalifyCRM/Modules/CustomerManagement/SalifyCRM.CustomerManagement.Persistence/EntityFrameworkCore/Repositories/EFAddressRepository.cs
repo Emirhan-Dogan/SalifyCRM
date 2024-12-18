@@ -16,5 +16,9 @@ namespace SalifyCRM.CustomerManagement.Persistence.EntityFrameworkCore.Repositor
         {
 
         }
+        public object GetAddressesByCustomerId(int customerId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

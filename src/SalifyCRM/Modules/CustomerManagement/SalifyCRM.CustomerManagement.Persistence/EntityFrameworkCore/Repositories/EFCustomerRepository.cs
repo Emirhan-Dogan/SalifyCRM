@@ -16,5 +16,15 @@ namespace SalifyCRM.CustomerManagement.Persistence.EntityFrameworkCore.Repositor
         {
 
         }
+
+        public IEnumerable<Customer> GetCustomersByCustomerTagId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Customer> GetCustomersBySocialMediaId(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
