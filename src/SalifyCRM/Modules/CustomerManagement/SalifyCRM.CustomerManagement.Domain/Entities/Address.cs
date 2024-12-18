@@ -24,5 +24,10 @@ namespace SalifyCRM.CustomerManagement.Domain.Entities
         public int CreatedUserId { get; set; }
         public DateTime LastUpdatedDate { get; set; }
         public int LastUpdatedUserId { get; set; }
+
+        public AddressType? AddressType { get; set; }
+        public Country? Country { get; set; }
+        public City? City { get; set; }
+        public District? District { get; set; }
     }
 }

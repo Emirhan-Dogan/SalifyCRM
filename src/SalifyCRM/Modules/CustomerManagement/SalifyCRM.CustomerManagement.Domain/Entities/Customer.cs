@@ -33,5 +33,10 @@ namespace SalifyCRM.CustomerManagement.Domain.Entities
         public int CreatedUserId { get; set; }
         public DateTime LastUpdatedDate { get; set; }
         public int LastUpdatedUserId { get; set; }
+
+        public CustomerType CustomerType { get; set; }
+        public Occupation Occupation { get; set; }
+        public MartialStatus MartialStatus { get; set; }
+        public CustomerCategory CustomerCategory { get; set; }
     }
 }

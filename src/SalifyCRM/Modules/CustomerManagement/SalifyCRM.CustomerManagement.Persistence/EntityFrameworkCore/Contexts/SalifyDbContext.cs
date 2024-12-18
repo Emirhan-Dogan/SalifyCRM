@@ -37,6 +37,8 @@ namespace SalifyCRM.CustomerManagement.Persistence.EntityFrameworkCore.Contexts
             modelBuilder.ApplyConfiguration(new SocialMediaConfigurations());
             modelBuilder.ApplyConfiguration(new CustomerCategoryConfigurations());
 
+            modelBuilder.ApplyConfiguration(new UserConfigurations());
+
             base.OnModelCreating(modelBuilder);
         }
 
@@ -58,5 +60,7 @@ namespace SalifyCRM.CustomerManagement.Persistence.EntityFrameworkCore.Contexts
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<CustomerCategory> CustomerCategories { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }

@@ -19,5 +19,8 @@ namespace SalifyCRM.CustomerManagement.Domain.Entities
         public int CreatedUserId { get; set; }
         public DateTime LastUpdatedDate { get; set; }
         public int LastUpdatedUserId { get; set; }
+
+        public Customer? Customer { get; set; }
+        public Permission? Permission { get; set; }
     }
 }
