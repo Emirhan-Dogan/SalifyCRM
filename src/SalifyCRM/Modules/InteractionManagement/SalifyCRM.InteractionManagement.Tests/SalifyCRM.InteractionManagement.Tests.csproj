@@ -27,7 +27,11 @@
 
   <ItemGroup>
     <Folder Include="Api\" />
-    <Folder Include="Application\Handlers\" />
+    <Folder Include="Application\Handlers\InteractionTypes\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SalifyCRM.InteractionManagement.Application\SalifyCRM.InteractionManagement.Application.csproj" />
   </ItemGroup>
 
 </Project>
