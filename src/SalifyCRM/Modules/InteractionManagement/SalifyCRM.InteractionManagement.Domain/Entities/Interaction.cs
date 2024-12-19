@@ -9,11 +9,11 @@ namespace SalifyCRM.InteractionManagement.Domain.Entities
 {
     public class Interaction : IEntity
     {
-
+        public int Id { get; set; }
         public int InteractionTypeId { get; set; }
         public int CustomerId { get; set; }
         public int? OrderId { get; set; }
-        public string OrderCode { get; set; }
+        public string? OrderCode { get; set; }
         public DateTime InteractionDate { get; set; }
         public string Descriptions { get; set; }
         public bool IsDeleted { get; set; }

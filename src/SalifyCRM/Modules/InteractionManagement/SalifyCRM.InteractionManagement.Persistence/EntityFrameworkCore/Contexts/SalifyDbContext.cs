@@ -22,11 +22,19 @@ namespace SalifyCRM.InteractionManagement.Persistence.EntityFrameworkCore.Contex
             modelBuilder.ApplyConfiguration(new InteractionNoteConfigurations());
             modelBuilder.ApplyConfiguration(new InteractionTypeConfigurations());
 
+            modelBuilder.ApplyConfiguration(new UserConfigurations());
+            modelBuilder.ApplyConfiguration(new CustomerConfigurations());
+            modelBuilder.ApplyConfiguration(new OrderConfigurations());
+
             base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Interaction> Interactions { get; set; }
         public DbSet<InteractionNote> InteractionNotes { get; set; }
         public DbSet<InteractionType> InteractionTypes { get; set; }
+
+        public DbSet<User> Users { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }

@@ -7,9 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="Handlers\" />
-    <Folder Include="Responses\Interaction\" />
+    <Compile Remove="Responses\Interaction\**" />
+    <EmbeddedResource Remove="Responses\Interaction\**" />
+    <None Remove="Responses\Interaction\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Handlers\InteractionTypes\Commands\" />
   </ItemGroup>
 
   <ItemGroup>
