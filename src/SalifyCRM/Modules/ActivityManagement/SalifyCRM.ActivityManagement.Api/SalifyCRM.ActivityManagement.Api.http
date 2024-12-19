@@ -1,0 +1,6 @@
+@SalifyCRM.ActivityManagement.Api_HostAddress = http://localhost:5001
+
+GET {{SalifyCRM.ActivityManagement.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
