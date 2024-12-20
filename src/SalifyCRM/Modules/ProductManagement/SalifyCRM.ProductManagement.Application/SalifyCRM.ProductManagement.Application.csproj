@@ -8,15 +8,59 @@
 
   <ItemGroup>
     <Folder Include="Extensions\" />
-    <Folder Include="Handlers\" />
-    <Folder Include="RepositoryInterfaces\" />
-    <Folder Include="Responses\" />
+    <Folder Include="Handlers\Colors\Commands\" />
+    <Folder Include="Handlers\Colors\Queries\" />
+    <Folder Include="Handlers\Materials\Commands\" />
+    <Folder Include="Handlers\Materials\Queries\" />
+    <Folder Include="Handlers\ProductCategories\Commands\" />
+    <Folder Include="Handlers\ProductCategories\Queries\" />
+    <Folder Include="Handlers\ProductCategoryMappings\Commands\" />
+    <Folder Include="Handlers\ProductCategoryMappings\Queries\" />
+    <Folder Include="Handlers\ProductColors\Commands\" />
+    <Folder Include="Handlers\ProductColors\Queries\" />
+    <Folder Include="Handlers\ProductImages\Commands\" />
+    <Folder Include="Handlers\ProductImages\Queries\" />
+    <Folder Include="Handlers\ProductMaterials\Commands\" />
+    <Folder Include="Handlers\ProductMaterials\Queries\" />
+    <Folder Include="Handlers\ProductNotes\Commands\" />
+    <Folder Include="Handlers\ProductNotes\Queries\" />
+    <Folder Include="Handlers\Products\Commands\" />
+    <Folder Include="Handlers\Products\Queries\" />
+    <Folder Include="Handlers\ProductTagMappings\Commands\" />
+    <Folder Include="Handlers\ProductTagMappings\Queries\" />
+    <Folder Include="Handlers\ProductTags\Commands\" />
+    <Folder Include="Handlers\ProductTags\Queries\" />
+    <Folder Include="Handlers\Stores\Commands\" />
+    <Folder Include="Handlers\Stores\Queries\" />
+    <Folder Include="Handlers\StoreTypes\Commands\" />
+    <Folder Include="Handlers\StoreTypes\Queries\" />
+    <Folder Include="Handlers\Subscriptions\Commands\" />
+    <Folder Include="Handlers\Subscriptions\Queries\" />
+    <Folder Include="Responses\Colors\" />
+    <Folder Include="Responses\Materials\" />
+    <Folder Include="Responses\ProductTagMappings\" />
+    <Folder Include="Responses\ProductCategoryMappings\" />
+    <Folder Include="Responses\Subscriptions\" />
+    <Folder Include="Responses\ProductImages\" />
+    <Folder Include="Responses\ProductMaterials\" />
+    <Folder Include="Responses\ProductNotes\" />
+    <Folder Include="Responses\ProductTags\" />
+    <Folder Include="Responses\StoreTypes\" />
+    <Folder Include="Responses\Stores\" />
+    <Folder Include="Responses\Products\" />
+    <Folder Include="Responses\ProductColors\" />
+    <Folder Include="Responses\ProductCategories\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="MediatR" Version="11.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\Core\Core.csproj" />
+    <ProjectReference Include="..\SalifyCRM.ProductManagement.Domain\SalifyCRM.ProductManagement.Domain.csproj" />
   </ItemGroup>
 
 </Project>

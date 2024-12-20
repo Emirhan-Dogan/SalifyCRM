@@ -24,6 +24,8 @@ namespace SalifyCRM.ActivityManagement.Persistence.EntityFrameworkCore.Contexts
             modelBuilder.ApplyConfiguration(new ActivityStatusConfigurations());
             modelBuilder.ApplyConfiguration(new ActivityUserConfigurations());
 
+            modelBuilder.ApplyConfiguration(new UserConfigurations());
+
             base.OnModelCreating(modelBuilder);
         }
 
@@ -32,5 +34,7 @@ namespace SalifyCRM.ActivityManagement.Persistence.EntityFrameworkCore.Contexts
         public DbSet<ActivityUser> ActivityUsers { get; set; }
         public DbSet<ActivityType> ActivityTypes { get; set; }
         public DbSet<ActivityStatus> ActivityStatuses { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }

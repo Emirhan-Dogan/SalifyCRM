@@ -8,15 +8,30 @@
 
   <ItemGroup>
     <Folder Include="Extensions\" />
-    <Folder Include="Handlers\" />
-    <Folder Include="RepositoryInterfaces\" />
-    <Folder Include="Responses\" />
+    <Folder Include="Handlers\OrderProducts\Commands\" />
+    <Folder Include="Handlers\OrderProducts\Queries\" />
+    <Folder Include="Handlers\OrderStatuses\Commands\" />
+    <Folder Include="Handlers\OrderStatuses\Queries\" />
+    <Folder Include="Handlers\OrderSubscriptions\Commands\" />
+    <Folder Include="Handlers\OrderSubscriptions\Queries\" />
+    <Folder Include="Handlers\Orders\Commands\" />
+    <Folder Include="Handlers\Orders\Queries\" />
+    <Folder Include="Responses\OrderProductDetails\" />
+    <Folder Include="Responses\OrderSubscriptions\" />
+    <Folder Include="Responses\OrderStatuses\" />
+    <Folder Include="Responses\OrderProducts\" />
+    <Folder Include="Responses\Orders\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="MediatR" Version="11.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\Core\Core.csproj" />
+    <ProjectReference Include="..\SalifyCRM.OrderManagement.Domain\SalifyCRM.OrderManagement.Domain.csproj" />
   </ItemGroup>
 
 </Project>

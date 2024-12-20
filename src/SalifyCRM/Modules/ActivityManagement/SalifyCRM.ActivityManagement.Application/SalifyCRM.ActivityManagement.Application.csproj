@@ -7,9 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="Handlers\" />
-    <Folder Include="Responses\" />
+    <Folder Include="Handlers\Activities\Commands\" />
+    <Folder Include="Handlers\Activities\Queries\" />
+    <Folder Include="Handlers\ActivityNotes\Commands\" />
+    <Folder Include="Handlers\ActivityNotes\Queries\" />
+    <Folder Include="Handlers\ActivityStatuses\Commands\" />
+    <Folder Include="Handlers\ActivityStatuses\Queries\" />
+    <Folder Include="Handlers\ActivityTypes\Commands\" />
+    <Folder Include="Handlers\ActivityTypes\Queries\" />
+    <Folder Include="Handlers\ActivityUsers\Commands\" />
+    <Folder Include="Handlers\ActivityUsers\Queries\" />
   </ItemGroup>
 
   <ItemGroup>
